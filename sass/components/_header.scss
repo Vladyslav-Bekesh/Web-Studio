@@ -1,0 +1,42 @@
+.header--underline {
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.contacts {
+  display: flex;
+  gap: 50px;
+  align-items: baseline;
+}
+
+.contacts__adress {
+  color: var(--adress-benefits-color);
+}
+
+.contacts__mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__adress {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--main-links-color);
+    }
+}
+

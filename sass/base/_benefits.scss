@@ -1,0 +1,47 @@
+.benefits {
+  line-height: calc(24 / 14);
+  color: var(--adress-benefits-color);
+}
+
+.benefits__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 90px 15px 0 15px;
+}
+
+.benefits__list {
+  list-style: none;
+  display: flex;
+  gap: var(--defoult-space-between);
+  padding: 0;
+}
+
+.benefits__item {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  width: 270px;
+}
+
+.benefits__svg-container {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.benefits__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits__title {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--link-description-color);
+  margin-bottom: 10px;
+}

@@ -1,0 +1,133 @@
+.footer {
+  left: 0px;
+  background-color: var(--hero-footer-bgc);
+  padding: 0 0;
+
+  margin: 0 auto;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__nav {
+  margin-right: 85px;
+}
+
+
+.adresses {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+/* footer adress */
+.adresses__street {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.adresses__virtual {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer socials */
+
+.footer-socials__title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.socials__href--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(175, 177, 184, 0.0);
+  color: #fff;
+}
+
+
+
+
+/* footer-form */
+.footer-form-container {
+  margin-left: auto;
+}
+
+.footer-form__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__input {
+  width: 358px;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  height: 50px;
+  color: #fff;
+  padding-left: 15px;
+  margin-right: 12px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.footer-form__btn {
+  background-color: var(--main-links-color);
+  padding: 10px 28px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30/16);
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #FFFFFF;
+
+
+}
+
+.footer-form__btn-txt {
+
+  text-align: center;
+  margin: 0;
+  margin-right: 10px;
+}

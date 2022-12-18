@@ -1,0 +1,27 @@
+.header__logo {
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 95px;
+}
+
+.webstudio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.webstudio--web {
+  color: var(--main-links-color);
+}
+
+.webstudio--studio-header {
+  color: var(--studio-header-color);
+}
+
+.webstudio--studio-footer {
+  color: var(--main-color);
+}

@@ -1,0 +1,10 @@
+/* GRID SETTINGS */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--defoult-space-between);
+}
+
+.grid-item {
+  flex-basis: calc(100% - var(--defoult-space-between) * (var(--items) - 1) / (var(--items)));
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Modern normilize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Modern normilize -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- -----------------------HEADER---------------------- -->
+    <header class="header--underline">
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo">
+          <span class="webstudio webstudio--web">Web</span>
+          <span class="webstudio webstudio--studio-header">Studio</span>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link-item transition-prop current-page">Студія</a>
+            </li>
+    
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link-item transition-prop">Портфоліо</a>
+            </li>
+    
+            <li class="nav__item">
+              <a href="" class="nav__link-item transition-prop">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts">
+    
+          <a href="mailto:info@devstudio.com" class="contacts__adress transition-prop">
+            <svg class="contacts__mail " width="16" height="12">
+              <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+    
+          <a href="tel:+380961111111" class="contacts__adress transition-prop">
+            <svg class="contacts__smartphone" width="10" height="16">
+              <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- -----------------------HEADER--------------------- -->
+
+    <!-- -----------------------MAIN----------------------- -->
+    <main class="main-container">
+      <!-- -----FILTRES BTNS----- -->
+      <div class="container ">
+        <ul class="filtres-list">
+          <li class="filtres-items">
+            <button type="button" class="filtres-buttons hover-focus-transition">Усі</button>
+          </li>
+          <li class="filtres-items">
+            <button type="button" class="filtres-buttons hover-focus-transition">Веб-сайти</button>
+          </li>
+          <li class="filtres-items">
+            <button type="button" class="filtres-buttons hover-focus-transition">Додатки</button>
+          </li>
+          <li class="filtres-items">
+            <button type="button" class="filtres-buttons hover-focus-transition">Дизайн</button>
+          </li>
+          <li class="filtres-items">
+            <button type="button" class="filtres-buttons hover-focus-transition">Маркетинг</button>
+          </li>
+        </ul>
+      
+      <!-- -----FILTRES BTNS----- -->
+
+      <!-- -----PRODUCTS----- -->
+      
+        <ul class="products__list grid">
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio1.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Технокряк</p>
+              <p class="product__class">Веб-сайт</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio2.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Постер New Orlean vs Golden Star</p>
+              <p class="product__class">Дизайн</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio3.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Ресторан Seafood</p>
+              <p class="product__class">Додаток</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img
+                src="./images/portfolio/portfolio4.jpg"
+                alt="накидні наушники"
+                height="294"
+              />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            
+            <div class="product__text">
+              <p class="product__name">Проєкт Prime</p>
+              <p class="product__class">Маркетинг</p>
+            </div>
+
+            
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio5.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Проєкт Boxes</p>
+              <p class="product__class">Додаток</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio6.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Inspiration has no Borders</p>
+              <p class="product__class">Веб-сайт</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio7.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Видання Limited Edition</p>
+              <p class="product__class">Дизайн</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio8.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Проєкт LAB</p>
+              <p class="product__class">Маркетинг</p>
+            </div>
+          </li>
+
+          <li class="product__item  hover-focus-transition">
+            <div class="product__thumb">
+              <img src="./images/portfolio/portfolio9.jpg" alt="накидні наушники" height="294" />
+              <div class="overlay">
+                <p class="overlay__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dicta illo suscipit, neque
+                  expedita pariatur deleniti id nihil maiores officiis aspernatur quas incidunt consequuntur, dolorem voluptatum sed
+                  et a ea!</p>
+              </div>
+            </div>
+            <div class="product__text">
+              <p class="product__name">Growing Business</p>
+              <p class="product__class">Додаток</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- -----PRODUCTS----- -->
+    </main>
+    <!-- -----------------------MAIN----------------------- -->
+
+    <!-- -----------------------FOOTER--------------------- -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__nav">
+              <a href="./index.html">
+                <span class="webstudio webstudio--web">Web</span>
+                <span class="webstudio webstudio--studio-footer">Studio</span>
+              </a>
+              <section class="adresses">
+                <address class="adresses__street">
+                  м. Київ, пр-т Лесі Українки, 26
+                </address>
+                <a href="mailto:info@devstudio.com" class="adresses__virtual">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="adresses__virtual">
+                  +38 096 111 11 11</a>
+              </section>
+            </div>
+      
+            <div class="footer-socials">
+              <h3 class="footer-socials__title">Приєднуйтесь</h3>
+              <ul class="socials__list">
+                <li>
+                  <a class="socials__href socials__href--footer transition-prop" href="http://" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class=" socials__svg" width="20" height="20">
+                      <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="socials__href socials__href--footer transition-prop" href="http://" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class=" socials__svg" width="20" height="20">
+                      <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="socials__href socials__href--footer transition-prop" href="http://" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class=" socials__svg" width="20" height="20">
+                      <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="socials__href socials__href--footer transition-prop" href="http://" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class=" socials__svg" width="20" height="20">
+                      <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+              </ul>
+            </div>
+      
+            <div class="footer-form-container">
+              <p class="footer-form__title">Підпишіться на розсилку</p>
+              <form name="footer-form" class="footer-form" action="" autocomplete="on">
+                <input class="footer-form__input" type="email" placeholder="E-mail" validate>
+                <button class="footer-form__btn" type="submit"><span class="footer-form__btn-txt">Підписатися</span>
+                  <svg class="footer-form__icon" width="24" height="24">
+                    <use href="./images/svg/symbol-defs.svg#icon-send"></use>
+                  </svg></button>
+              </form>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+    <!-- -----------------------FOOTER--------------------- -->
+  </body>
+</html>

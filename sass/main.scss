@@ -1,0 +1,28 @@
+//utils styles
+@import './utils/_variables';
+
+//base styles
+@import './base/_reset';
+@import './base/_base';
+@import './base/_hero';
+@import './base/_benefits';
+@import './base/_responsibilities';
+@import './base/_our-team';
+@import './base/_customers';
+@import './base/_modal';
+@import './base/_filtres_btns';
+@import './base/_products';
+
+//components styles
+@import './components/_container';
+@import './components/_grid';
+@import './components/_properties-titles';
+@import './components/_smoth-color-change';
+@import './components/_header';
+@import './components/_header__nav';
+@import './components/_header-and-footer-logo';
+@import './components/_socials';
+@import './components/_footer';
+
+
+

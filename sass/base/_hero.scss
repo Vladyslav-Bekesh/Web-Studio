@@ -1,0 +1,52 @@
+.hero {
+  max-width: 1600px;
+  ;
+  background-color: var(--hero-footer-bgc);
+  margin: 0 auto;
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/hero/bg-hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  /* txt styles */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  /* txt align */
+  margin: auto;
+  width: 700px;
+  text-align: center;
+}
+
+.hero__button {
+  /* btn */
+  width: 216px;
+  height: 50px;
+  border: none;
+  background: var(--main-links-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  /* btn txt */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  /* btn align */
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}

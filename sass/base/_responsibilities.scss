@@ -1,0 +1,47 @@
+
+
+.responsibilities {
+  padding: 0px 0;
+}
+
+.responsibilities__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: var(--defoult-space-between);
+}
+
+.responsibilities__item {
+  height: 294px;
+}
+
+.responsisbilities__thumb {
+  position: relative;
+}
+
+.responsibilities__overlay {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 70px;
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.responsibilities__overlay-txt {
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+

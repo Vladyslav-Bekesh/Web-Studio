@@ -3,12 +3,6 @@
   color: var(--adress-benefits-color);
 }
 
-.benefits__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 90px 15px 0 15px;
-}
-
 .benefits__list {
   list-style: none;
   display: flex;
@@ -20,11 +14,21 @@
 .benefits__item {
   font-size: 14px;
   letter-spacing: 0.03em;
-  width: 270px;
+  width: 100%;
+
+  //tablet screen
+  @media screen and (min-width: 768px) {
+    width:calc((100% - 30px) / 2);
+  }
+
+  //desktop screen
+  @media screen and (min-width: 1200px) {
+
+  }
 }
 
 .benefits__svg-container {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -39,10 +43,15 @@
 }
 
 .benefits__title {
-  font-family: "Roboto";
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--link-description-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.benefits__text{
+  width: 100%;
+  text-align: left;
 }

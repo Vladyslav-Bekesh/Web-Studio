@@ -2,21 +2,24 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
 
   //phone screen
   @media screen and (min-width: 480px) {
-    width: 448px;  
-    background-color: teal;  
+    width: 448px; 
+    padding-top: 60px;
+    padding-bottom: 60px;  
   }
 
   //tablet screen
   @media screen and (min-width: 768px) {
     width: 768px;
-    background-color: tomato;
   }
 
   //desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-top: 95px;
+    padding-bottom: 95px;
   }
 }

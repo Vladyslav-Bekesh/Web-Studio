@@ -24,6 +24,16 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero {
   max-width: 1600px;
   background-color: var(--hero-footer-bgc);
@@ -81,17 +91,13 @@ a {
   color: var(--adress-benefits-color);
 }
 
-.benefits__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 90px 15px 0 15px;
-}
-
 .benefits__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: var(--defoult-space-between);
   padding: 0;
 }
@@ -99,11 +105,15 @@ a {
 .benefits__item {
   font-size: 14px;
   letter-spacing: 0.03em;
-  width: 270px;
+  width: 100%;
 }
-
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 .benefits__svg-container {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   display: -webkit-box;
@@ -124,12 +134,17 @@ a {
 }
 
 .benefits__title {
-  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: var(--link-description-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.benefits__text {
+  width: 100%;
+  text-align: left;
 }
 
 .responsibilities {
@@ -652,9 +667,29 @@ a {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
-  padding: 90px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 /* GRID SETTINGS */

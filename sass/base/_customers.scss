@@ -21,7 +21,7 @@
   height: 92px;
   //phone screen
   @media screen and (min-width: 480px) {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
   }
   //tablet screen
   @media screen and (min-width: 768px) {

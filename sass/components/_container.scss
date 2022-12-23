@@ -3,12 +3,12 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
   //phone screen
   @media screen and (min-width: 480px) {
     width: 448px; 
-    padding-top: 60px;
-    padding-bottom: 60px;  
+  
   }
 
   //tablet screen

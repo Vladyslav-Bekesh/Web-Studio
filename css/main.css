@@ -26,6 +26,7 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 img {
@@ -112,6 +113,12 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    max-width: 270px;
+  }
+}
+
 .benefits__svg-container {
   width: 100%;
   height: 120px;
@@ -148,52 +155,57 @@ img {
 }
 
 .responsibilities {
-  padding: 0px 0;
+  padding: 0 0;
 }
-
-.responsibilities__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  gap: var(--defoult-space-between);
+@media screen and (min-width: 4px) {
+  .responsibilities {
+    display: none;
+  }
 }
-
-.responsibilities__item {
-  height: 294px;
-}
-
-.responsisbilities__thumb {
-  position: relative;
-}
-
-.responsibilities__overlay {
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 70px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.responsibilities__overlay-txt {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+@media screen and (min-width: 1200px) {
+  .responsibilities {
+    display: block;
+  }
+  .responsibilities .responsibilities__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    gap: var(--defoult-space-between);
+  }
+  .responsibilities .responsibilities__item {
+    height: 294px;
+  }
+  .responsibilities .responsisbilities__thumb {
+    position: relative;
+  }
+  .responsibilities .responsibilities__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .responsibilities .responsibilities__overlay-txt {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
 }
 
 .our-team {
@@ -207,6 +219,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: var(--defoult-space-between);
   margin: 0;
   padding-left: 0;
@@ -214,18 +228,28 @@ img {
 
 .our-team__item {
   /* txt prop */
-  width: 270px;
+  width: calc((100% - 30px) / 1);
   font-style: normal;
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   /* box prop */
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    max-width: 270px;
+  }
 }
 
 .name {
@@ -268,6 +292,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: var(--defoult-space-between);
 }
 
@@ -281,8 +307,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .customers__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers__item {
+    width: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    max-width: 170px;
+  }
 }
 
 .customers__href {

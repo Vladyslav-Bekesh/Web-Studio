@@ -4,8 +4,14 @@
   padding: 0 0 50px 0;
   /* flex prop */
   display: flex;
+  flex-wrap: wrap ;
   gap: 8px;
-  justify-content: center;
+  justify-content: left;
+  
+    //tablet screen
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
 }
 
 .filtres-items {

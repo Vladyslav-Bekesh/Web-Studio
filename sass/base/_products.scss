@@ -31,7 +31,7 @@
 
 .product__item {
   border: #eeeeee solid 1px;
-  width: 370px;
+  width: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -42,6 +42,16 @@
     transition-duration: var(--fast-anim);
     transition-property: opacity, transform;
   }
+  
+     //tablet screen
+     @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 2);
+     }
+  
+     //desktop screen
+     @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+     }
 }
 
 .product__thumb {

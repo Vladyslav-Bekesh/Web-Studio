@@ -12,10 +12,6 @@
   --fast-anim: 150ms;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -33,6 +29,16 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .hero {
@@ -156,11 +162,7 @@ img {
 
 .responsibilities {
   padding: 0 0;
-}
-@media screen and (min-width: 4px) {
-  .responsibilities {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .responsibilities {
@@ -310,7 +312,7 @@ img {
   width: 100%;
   height: 92px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .customers__item {
     width: calc((100% - 60px) / 2);
   }
@@ -574,10 +576,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+@media screen and (min-width: 768px) {
+  .filtres-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filtres-items {
@@ -650,7 +661,7 @@ img {
 
 .product__item {
   border: #eeeeee solid 1px;
-  width: 370px;
+  width: 100%;
 }
 .product__item:hover, .product__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -666,6 +677,16 @@ img {
   transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
+}
+@media screen and (min-width: 768px) {
+  .product__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .product__thumb {
@@ -775,7 +796,7 @@ img {
   margin: 0 auto;
 }
 
-.header__container {
+.header--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,17 +807,24 @@ img {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   gap: 50px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
-.contacts__adress {
-  color: var(--adress-benefits-color);
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    max-width: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contacts__mail {
@@ -810,17 +838,65 @@ img {
 }
 
 .contacts__adress {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
+  margin-top: 10px;
+  color: var(--adress-benefits-color);
 }
 .contacts__adress:hover, .contacts__adress:focus {
   color: var(--main-links-color);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 180px;
+  }
+}
+
+.header__logo {
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 95px;
+}
+
+.webstudio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.webstudio--web {
+  color: var(--main-links-color);
+}
+
+.webstudio--studio-header {
+  color: var(--studio-header-color);
+}
+
+.webstudio--studio-footer {
+  color: var(--main-color);
+}
 
 .nav {
-  margin-right: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+  }
 }
 
 .nav__list {
@@ -881,32 +957,17 @@ img {
   color: var(--main-links-color);
 }
 
-.header__logo {
-  text-decoration: none;
-  margin-left: 15px;
-  margin-right: 95px;
+.header__menu {
+  margin-left: auto;
+  fill: currentColor;
 }
-
-.webstudio {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.webstudio--web {
+.header__menu:hover, .header__menu:focus {
   color: var(--main-links-color);
 }
-
-.webstudio--studio-header {
-  color: var(--studio-header-color);
-}
-
-.webstudio--studio-footer {
-  color: var(--main-color);
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 .socials__list {

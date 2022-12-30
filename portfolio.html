@@ -25,8 +25,8 @@
   </head>
   <body>
     <!-- -----------------------HEADER---------------------- -->
-    <!-- <header class="header--underline">
-      <div class="header__container container">
+    <header class="header--underline">
+      <div class="header--container container">
         <a href="./index.html" class="header__logo">
           <span class="webstudio webstudio--web">Web</span>
           <span class="webstudio webstudio--studio-header">Studio</span>
@@ -34,17 +34,18 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link-item transition-prop current-page">Студія</a>
+              <a href="./index.html" class="nav__link-item transiton-prop ">Студія</a>
             </li>
     
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link-item transition-prop">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link-item transition-prop current-page">Портфоліо</a>
             </li>
     
             <li class="nav__item">
               <a href="" class="nav__link-item transition-prop">Контакти</a>
             </li>
           </ul>
+    
         </nav>
         <div class="contacts">
     
@@ -62,8 +63,15 @@
             +38 096 111 11 11
           </a>
         </div>
+    
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="header__menu-svg" width="40" height="40">
+            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+    
       </div>
-    </header> -->
+    </header>
     <!-- -----------------------HEADER--------------------- -->
 
     <!-- -----------------------MAIN----------------------- -->
@@ -315,5 +323,41 @@
         </div>
       </footer>
     <!-- -----------------------FOOTER--------------------- -->
+
+    <!-- -----------------------MOBILE MENU--------------------- -->
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__close" width="40" height="40">
+          <use href="./images/svg/symbol-defs.svg#modal-close"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu__nav">
+        <li class="nav__item transition-prop"><a href="./index.html" class="nav__link">Студія</a></li>
+        <li class="nav__item transition-prop"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+        <li class="nav__item transition-prop"><a href="" class="nav__link">Контакти</a></li>
+      </ul>
+    
+      <ul class="mobile-menu__adresses">
+        <li class="adresses__item"><a href="mailto:info@devstudio.com" class="adresses__tel adresses--link">+38 096 111 11
+            11</a></li>
+        <li class="adresses__item"><a href="mailto:info@devstudio.com"
+            class="adresses__mail adresses--link">info@devstudio.com</a></li>
+      </ul>
+    
+      <ul class="mobile-menu__mobile-socials">
+        <li class="mobile-socials__item"><a href="instagam.com" class="mobile-socials__link">Instagam</a></li>
+        <li class="mobile-socials__item"><a href="twitter.com" class="mobile-socials__link">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="facebook.com" class="mobile-socials__link">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="linkedin.com" class="mobile-socials__link">Linkedin</a></li>
+      </ul>
+    </div>
+    
+    <!-- -----------------------MOBILE MENU--------------------- -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

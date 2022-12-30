@@ -1,14 +1,32 @@
 .hero {
   max-width: 1600px;
-  ;
   background-color: var(--hero-footer-bgc);
-  margin: 0 auto;
-  padding: 200px 0;
+  // margin: 0 auto;
+  padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/index/hero/bg-hero-img.jpg);
+  url(../images/index/hero/bg-hero-img-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+
+  //phone screen
+  @media screen and (min-width: 480px) {
+
+  }
+  
+  //tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/hero/bg-hero-img-tab.jpg);
+  }
+
+  //desktop screen
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/hero/bg-hero-img-desk.jpg);
+  }
 }
 
 .hero__title {
@@ -16,17 +34,26 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: #ffffff;
   /* txt align */
+  max-width: 700px;
   margin: auto;
-  width: 700px;
   text-align: center;
+
+  //tablet screen
+  @media screen and (min-width: 768px) {}
+
+  //desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__button {

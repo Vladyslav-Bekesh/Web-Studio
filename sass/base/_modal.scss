@@ -22,12 +22,20 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 528px;
+  width: 480px;
   min-height: 580px;
   background-color: #fff;
   border-radius: 4px;
   transition: transform, opacity, var(--fast-anim);
-  padding: 40px;
+  padding: 30px;
+  //tablet screen
+  @media screen and (min-width: 768px) {}
+
+  //desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    padding: 40px;
+  }
 }
 
 .backdrop.is-hidden .modal {

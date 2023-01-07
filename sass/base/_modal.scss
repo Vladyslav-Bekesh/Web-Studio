@@ -8,7 +8,7 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: background-color, var(--fast-anim);
+  transition: opacity var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -26,7 +26,7 @@
   min-height: 580px;
   background-color: #fff;
   border-radius: 4px;
-  transition: transform, opacity, var(--fast-anim);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
   //tablet screen
   @media screen and (min-width: 768px) {}
@@ -40,8 +40,6 @@
 
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
-  opacity: 0;
-
 }
 
 .modal-close-button {
@@ -85,7 +83,7 @@
   line-height: calc(14/12);
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
 }
 
@@ -128,6 +126,7 @@
 }
 
 .modal-form__message {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -150,12 +149,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   font-size: 14px;
 }
 
 .modal-form__checkbox {
+  outline: none;
   appearance: none;
   width: 17px;
   height: 17px;

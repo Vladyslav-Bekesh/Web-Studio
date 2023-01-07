@@ -40,11 +40,11 @@
   margin-bottom: 250px;
 }
 
-.nav__item:not(:last-child){
+.mobile-nav__item:not(:last-child){
   margin-bottom: 32px;
 }
 
-.nav__link {
+.mobile-nav__item__link {
   font-weight: 500;
   font-size: 40px;
   line-height: calc(47/40);
@@ -52,16 +52,16 @@
   color: var(--link-description-color);
 }
 
-.nav__link:focus {
+.mobile-nav__item__link:focus {
   color: var(--main-links-color);
+}
+
+.mobile-adresses__item:not(:last-child){
+  margin-bottom: 32px;
 }
 
 .mobile-menu__adresses {
   margin-bottom: 65px;
-}
-
-.adresses__item:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .adresses__tel {
@@ -99,8 +99,3 @@
   letter-spacing: 0.02em;
   color: var(--main-links-color);
 }
-
-.socials__link:not(:first-child){
-
-}
-

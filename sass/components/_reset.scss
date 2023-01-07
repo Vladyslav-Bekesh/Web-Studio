@@ -4,14 +4,16 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-img{
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -25,7 +27,4 @@ h5,
 h6,
 p {
   margin: 0;
-}
-ul{
-  padding: 0;
 }

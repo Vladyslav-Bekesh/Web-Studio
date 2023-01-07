@@ -1,6 +1,10 @@
 .benefits {
   line-height: calc(24 / 14);
   color: var(--adress-benefits-color);
+  padding-top: 65px;
+  @media screen and (min-width: 1200px) {
+      padding-top: 95px;
+  }
 }
 
 .benefits__list {

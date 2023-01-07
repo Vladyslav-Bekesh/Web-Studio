@@ -3,8 +3,7 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   //phone screen
   @media screen and (min-width: 480px) {
     width: 448px; 
@@ -19,8 +18,15 @@
   //desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
+
+  }
+}
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 95px;
     padding-bottom: 95px;
   }
 }
-

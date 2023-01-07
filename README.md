@@ -18,6 +18,6 @@
 
 width:calc((100% - padding) / items);
 
-padding := (paddings on the edges of the container) * 02;
+padding := (paddings on the edges of the container) * 2;
 items := how many items on one string;
 --- --- --- ---

@@ -26,7 +26,7 @@
   min-height: 580px;
   background-color: #fff;
   border-radius: 4px;
-  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), scale var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1); 
   padding: 30px;
   padding-top: 40px;
   //desktop screen
@@ -176,11 +176,14 @@
 
 .checkbox__agreement-description {
 
-  font-size: 14px;
-  line-height: calc(24/14);
+  font-size: 12px;
+  line-height: calc(24/12);
   letter-spacing: 0.03em;
-
   color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24/14);
+  }
 }
 
 .checkbox__agreement-link {
@@ -189,7 +192,7 @@
   letter-spacing: 0.03em;
   text-decoration: underline;
 
-  color: #2196F3;
+  color: var(--main-links-color);
 }
 
 .modal-form__btn-container {

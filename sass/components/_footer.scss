@@ -99,6 +99,9 @@
   gap: 9px;
   margin-top: 20px;
   margin-bottom: 60px; //
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .adresses__txt {
@@ -119,6 +122,9 @@
 .footer-socials {
   //
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-socials__title {

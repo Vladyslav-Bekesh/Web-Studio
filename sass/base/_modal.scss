@@ -18,23 +18,22 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 480px;
+  width: 450px;
   min-height: 580px;
   background-color: #fff;
   border-radius: 4px;
-  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1), scale var(--fast-anim) cubic-bezier(0.4, 0, 0.2, 1); 
   padding: 30px;
-  //tablet screen
-  @media screen and (min-width: 768px) {}
-
+  padding-top: 40px;
   //desktop screen
   @media screen and (min-width: 1200px) {
     width: 528px;
     padding: 40px;
+    position: absolute;
   }
 }
 

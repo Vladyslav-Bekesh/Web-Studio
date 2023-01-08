@@ -53,6 +53,7 @@
      //desktop screen
      @media screen and (min-width: 1200px) {
         width: calc((100% - 30px) / 3);
+        max-width: 370px;
      }
 }
 

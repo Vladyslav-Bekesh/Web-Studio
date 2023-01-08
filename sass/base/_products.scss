@@ -47,12 +47,12 @@
   
      //tablet screen
      @media screen and (min-width: 768px) {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 30px) / 2);
      }
   
      //desktop screen
      @media screen and (min-width: 1200px) {
-        width: calc((100% - 60px) / 3);
+        width: calc((100% - 30px) / 3);
      }
 }
 

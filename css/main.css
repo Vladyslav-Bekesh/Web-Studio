@@ -800,7 +800,7 @@
 }
 
 .mobile-menu__nav {
-  margin-bottom: 250px;
+  margin-bottom: 300px;
 }
 
 .mobile-nav__item:not(:last-child) {
@@ -832,8 +832,6 @@
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--main-links-color);
-  margin-bottom: 32px;
-  display: inline-block;
 }
 
 .adresses__mail {
@@ -848,6 +846,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: auto;
 }
 
 .mobile-socials__item:not(:last-child) {
